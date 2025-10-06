@@ -1,6 +1,6 @@
 
 async function loadQuestions() {
-  const response = await fetch("sorular/toplama.json");
+  const response = await fetch("soru/toplama.json");
   const questions = await response.json();
   const randomQs = questions.sort(() => 0.5 - Math.random()).slice(0, 10);
   const leftCol = document.getElementById("left-col");
